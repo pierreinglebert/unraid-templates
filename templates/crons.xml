@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <TemplateURL>https://raw.githubusercontent.com/pierreinglebert/unraid-docker-templates/master/templates/crons.xml</TemplateURL>
+  <Beta>False</Beta>
+  <Category>Other</Category>
+  <Name>crons</Name>
+  <Description>
+    Home crons
+  </Description>
+  <Overview>
+    My own crons
+  </Overview>
+  <Support>http://lime-technology.com/forum/index.php?topic=45849.0</Support>
+  <Registry>https://registry.hub.docker.com/u/pierreinglebert/crons</Registry>
+  <GitHub>https://github.com/pierreinglebert/unraid-templates</GitHub>
+  <Repository>pierreinglebert/crons</Repository>
+  <Project></Project>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish>
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name>PGPASSWORD</Name>
+      <Value></Value>
+    </Variable>
+    <Variable>
+      <Name>PGHOST</Name>
+      <Value></Value>
+    </Variable>
+    <Variable>
+      <Name>UMASK</Name>
+      <Value>000</Value>
+    </Variable>
+    <Variable>
+      <Name>PUID</Name>
+      <Value>99</Value>
+    </Variable>
+    <Variable>
+      <Name>PGID</Name>
+      <Value>100</Value>
+    </Variable>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir>/backup</HostDir>
+      <ContainerDir>/backup</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI></WebUI>
+  <Icon></Icon>
+</Containers>
